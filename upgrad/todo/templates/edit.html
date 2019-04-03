@@ -1,0 +1,5 @@
+<form method="POST" novalidate>
+    {% csrf_token %}
+    <input type="text" placeholder="{{ todo.title }}" name="todo" value="{{ todo.title }}">
+    <button class="btn btn-primary" type="submit">Update the todo</button>
+</form>
